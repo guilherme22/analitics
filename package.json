@@ -1,0 +1,19 @@
+{
+  "name": "analitics",
+  "version": "1.0.0",
+  "description": "analise de dados de videos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "gsouza@band.com.br",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.12.4",
+    "fast-csv": "^0.6.0",
+    "lodash": "^3.9.3",
+    "mongoose": "^4.0.5",
+    "request": "^2.57.0",
+    "socket.io": "^1.3.5"
+  }
+}

@@ -1,0 +1,30 @@
+<html>
+	<title>	
+		Inicio
+	</title>
+
+	<head>
+
+	</head>
+
+	<body>
+		<h3>TESTANDO AQUI BROTHER</h3>
+
+		<input type="button" id="importar" value="Importar Dados" />
+
+	</body>
+	<script src="/socket.io/socket.io.js"></script>
+	<script>
+	  var socket = io.connect('http://localhost');
+	  socket.on('importarDone', function (data) {
+	   	 console.log(data);
+	  });
+
+	  var importar = document.getElementById('importar');
+
+	  importar.addEventListener('click', function(){ 
+	  	socket.emit('importar', true)
+	  })
+
+	</script>
+	</html>
